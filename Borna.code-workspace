@@ -1,8 +1,30 @@
 {
-	"folders": [
-		{
-			"path": "."
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "c": "cpp",
+      "qapplication": "cpp",
+      "qpushbutton": "cpp"
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build",
+        "command": "${workspaceFolder}\\cmds\\build.bat",
+        "type": "shell",
+        "args": ["${workspaceFolder}"],
+        "problemMatcher": [],
+        "group": {
+			"kind": "build",
+			"isDefault": true
 		}
-	],
-	"settings": {},
+      }
+    ]
+  }
 }
