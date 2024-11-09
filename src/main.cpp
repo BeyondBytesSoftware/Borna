@@ -1,12 +1,23 @@
-#include <iostream>
+#include <QApplication>
+#include <QPushButton>
+#include <QWidget>
+#include <QVBoxLayout>
 
-int main() 
+int main(int argc, char *argv[])
 {
-    std::cout << "Hello, World!" << std::endl;
+    QApplication app(argc, argv);
 
-    int x = 5;
-    int y = 7;
-    int z = x + y;
+    QWidget Window;
+    Window.setWindowTitle("Borna 2D Animation Software");
 
-    return 0;
+    QVBoxLayout Layout(&Window);
+
+    QPushButton Button("Click me!");
+
+    Layout.addWidget(&Button);
+
+    Window.resize(400, 400);
+    Window.show();
+
+    return app.exec();
 }

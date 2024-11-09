@@ -37,3 +37,6 @@
 
 # Visual Studio
 *.vs
+
+# CMake
+build*
